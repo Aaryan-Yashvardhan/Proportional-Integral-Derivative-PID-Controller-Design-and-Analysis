@@ -10,7 +10,7 @@ The project aims to analyze the performance of different controller configuratio
    - No Overshoot Control: This configuration aims to design a controller that eliminates or minimizes overshoot, ensuring a smooth response without exceeding the desired setpoint.
 
 2. System Performance Measures:
-   - Various dynamic performance measures were considered, including rise time, settling time, overshoot, and steady-state error. These measures help evaluate the effectiveness of different controller configurations in meeting the desired system response characteristics.
+   - Various dynamic performance measures were considered, including rise time, settling time, overshoot, and steady-state error. These measures help evaluate the effectiveness of different controller configurations in meeting the desired system response characteristics. 
 
 3. Analysis and Comparison:
    - The project analyzed the response of the system under each controller configuration through simulation and analysis using MATLAB.
