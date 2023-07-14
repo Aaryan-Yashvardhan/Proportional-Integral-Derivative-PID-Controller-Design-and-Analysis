@@ -31,31 +31,13 @@ function [varargout] = ZieglerNichols(varargin)
 %
 %   [KP, KI, KD, TI, TD] = ZIEGLERNICHOLS(KU, TU, TYPE) does as above but
 %   also returns the parameters TI and TD.
-%
-%   For more information, see
-%   https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method.
-%
-%   For example usage see https://youtu.be/n829SwSUZ_c?t=1434.
-%
 %INPUT:     -KU:    Ultimate gain that leads to steady oscillations
 %           -TU:    Oscillation period (seconds)
 %           -TYPE:  char array denoting the type of desired control
 %
-%OUTPUT:    -KP:    Proporational gain
+%OUTPUT:    -KP:    Proportional gain
 %           -KI:    Integral gain
 %           -KD:    Derivative gain
-%
-%Created by Christopher Lum
-%lum@uw.edu
-
-%Version History
-%05/14/19: Created
-%05/15/19: Continued working
-%05/17/19: Removed NaNs.  Updated documentation
-%05/21/19: Added reference to YouTube video.
-
-%----------------------OBTAIN USER PREFERENCES-----------------------------
-switch nargin
     case 3
         %User supplies all inputs
         KU      = varargin{1};
@@ -72,8 +54,6 @@ switch nargin
         error('Invalid number of inputs');
 end
 
-
-%-----------------------CHECKING DATA FORMAT-------------------------------
 % KU
 
 % TU
